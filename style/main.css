@@ -1,0 +1,154 @@
+/*Root permite definir variaveis dentro 
+da raiz do documento */
+:root{
+    --vermelho: #E50915;
+    --preta: #141414;
+}
+
+/* O "*{" formata todos os elementos, impede que os elementos
+    sejam formatados livremente de acordo com cada navegador*/
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box; /*garante que a borda da
+    caixa dos elementos não seja utrapassada*/
+}
+/*Elementos base*/
+body{
+    background: var(--preta);
+    /* Times New Roman é a fonte principal, as demais funcionam 
+    como secundárias, caso o navegador os a página irá rodar não
+    reconheça a principal*/
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+/*permite a edição da caixa da classe container, de uma div,
+dentro do header*/
+header .container{
+    /*O display do tipo flex tem a tendência de colocar as caixas
+    em linha*/
+    display: flex;
+    flex-direction: row;
+    /*Align-item alinha as caixas do container (h2 e nav) verticalmente*/
+    align-items: center;
+    /*space-between cria um espaço entre as caixas do container(h2 e nav)*/
+    justify-content: space-between;
+}
+/**/
+header .logo a{
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+/*hover identifica quando passa-se o mouse sobre a caixa*/
+header .logo a:hover{
+    font-size: 41px;
+    margin-left: 5px;
+    
+}
+
+header nav a{
+    /*Remove a linha sob o texto*/
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+/*hover identifica quando passa-se o mouse sobre a caixa*/
+header nav a:hover{
+    color: #fff;
+    font-size: large;
+}
+
+/*filme principal*/
+
+main .filme-principal{
+    font-size: 16px;
+    height: 600px;
+    background-image: linear-gradient(rgba(0,0,0,.30), rgba(0,0,0,.30)100%), url('/img/GranTorino-Capa2.jpg');
+    background-position: center top;
+    background-size: cover;
+    /*background-attachment:local;
+    background-repeat: no-repeat;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /*animation: ChangeBackgroundImage 10s ease-in;*/
+}
+
+/*.filme-principal:hover{
+    animation: ChangeBackgroundImage 10s ease-in;
+}
+
+@keyframes ChangeBackgroundImage{ 
+    100%{
+        background-position: center center;
+    }
+
+}*/
+
+main .filme-principal .description{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 18px;
+    font-size: 17px;
+    text-align: justify;
+}
+/**/
+main .filme-principal .container .titulo{
+    margin-left: 10px;
+    margin-top: 30%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.button{
+    background-color: rgba(51, 48, 48, 0.3);
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+/*espaçamento entre icone e texto dos buttons*/
+.button i{
+    margin-right: 5px;
+}
+
+.buttons{
+    margin-left: 18px;
+}
+
+.button:hover{
+    background: linear-gradient(rgba(0,0,0,.30), rgba(0,0,0,.30)100%);
+}
+
+.container{
+    margin-left: 10px;
+}
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filme{
+    height: 90%;
+    width: 90%;
+    display: block;
+    background: linear-gradient(rgba(0, 0, 0, 100), rgba(0,0,0,.100)100%);
+    
+}
+
+.box-filme:hover{
+    opacity: .6;
+    cursor: pointer;
+}
+
+.carrosel-filmes{
+    margin-top:5px;
+}

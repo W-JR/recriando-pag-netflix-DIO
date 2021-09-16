@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<link lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+
+    <!--Resposividade-->
+    <link rel="stylesheet" href="style/resposive.css">
+
+    <title>NETFLIX Clone</title>
+    <link rel="icon" href="/img/icon-Netflix.png">
+    <!--Owl Css-->
+    <link rel="stylesheet" href="/style/Owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="/style/Owl/owl.theme.default.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2 class="logo">
+                <a href="#">TRAILERFLIX</a>
+            </h2>
+            <nav>
+                <a href="#">Início</a>
+                <a href="#">Séries</a>
+                <a href="#">Filmes</a>
+                <a href="#">Documentários</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="filme-principal">
+            <div class="container">
+                <h3 class="titulo">GRAN TORINO</h3>
+                <p class="description">Walt Kowalski é um inflexível veterano da Guerra da Coréia, agora aposentado. Para passar o tempo ele faz consertos, bebe cerveja e vai mensalmente ao barbeiro. Sua vida é alterada quando passa a ter como vizinhos imigrantes hmong, vindos do Laos. Ressentido e desconfiando de todos, Walt apenas deseja passar o tempo que lhe resta de vida. Até que Thao, seu tímido vizinho adolescente, é obrigado por uma gangue a roubar o carro do veterano, um Gran Torino retirado da linha de montagem pelo próprio. </p>
+                <div class="buttons">
+                    <button role="button" class="button" onclick="buttonassistir()">
+                        <i class="fas fa-play" "></i>
+                        ASSISTIR AGORA
+                    </button>
+                    <button role="button" class="button" onclick="buttoninfo()">
+                        <i class="fas fa-info-circle"></i>
+                        MAIS INFORMAÇÕES
+                    </button>    
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="carrosel-filmes">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-filme" src="/img/AtéOultimoHomen.jpg" alt="" srcset="" onclick="item1()"></img>
+            </div>
+            <div class="item">
+                <img class="box-filme" src="/img/SamueraiX-Aorigem.jpg" alt="" srcset="" onclick="item2()"></img>
+            </div>
+            <div class="item">
+                <img class="box-filme" src="/img/JustiçaemFamilia.jpg" alt="" srcset="" onclick="item3()"></img>
+            </div>
+            <div class="item">
+                <img class="box-filme" src="/img/PanteraNegra.jpg" alt="" srcset="" onclick="item4()"></img>
+            </div>
+            <div class="item">
+                <img class="box-filme" src="/img/Resgate.jpg" alt="" srcset="" onclick="item5()"></img>
+            </div>
+            <div class="item">
+                <img class="box-filme" src="/img/Caça-Jurassica.jpg" alt="" srcset="" onclick="item6()"></img>
+            </div>
+            <div class="item">
+                <img class="box-filme" src="/img/aGuerradoAmanhã.jpg" alt="" srcset="" onclick="item7()"></img>
+            </div>
+            <div class="item">
+                <img class="box-filme" src="/img/PatrulhaCanina.jpg" alt="" srcset="" onclick="item8()"></img>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/fff36e834c.js" crossorigin="anonymous"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+</body>
+</html>
